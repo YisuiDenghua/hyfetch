@@ -3,11 +3,11 @@ with import <nixpkgs> {};
 rec {
     hyfetch = python3Packages.buildPythonPackage rec {
         pname = "HyFetch";
-        version = "1.0.7";
+        version = "1.1.2";
 
         src = pythonPackages.fetchPypi {
             inherit pname version;
-            hash = "sha256-3/6/3EtTqHXTMuRIo2nclIxYSzOFvQegR29OJsKMQU4=";
+            hash = "sha256-HmSXDDoHaPo8WFKBMoFF/cXV+3odzo2BkXuzZLs+FeE=";
         };
 
         propagatedBuildInputs = with python3Packages; [
